@@ -6,6 +6,8 @@ function App() {
   const [state, dispatch] = useContext(StoreContext);
   const { todos, todoInput } = state;
 
+  console.log(todoInput)
+
   const handleAdd = () => {
     dispatch(actions.addTodo(todoInput))
   }
